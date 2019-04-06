@@ -26,9 +26,8 @@
             document.getElementById('a'+s).addEventListener('click', clickBoxFn)
         }
         function clickBoxFn(){
-            Idx = Number(this.id.substr(1));
-            document.getElementById('a'+Idx).style.backgroundColor = 'red';
-            document.getElementById('a'+Idx).style.color = '#fff';
+            this.style.backgroundColor = 'red';
+            this.style.color = '#fff';
         }
     </script>
 </body>
