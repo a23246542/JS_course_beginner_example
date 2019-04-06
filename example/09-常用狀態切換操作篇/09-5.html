@@ -36,10 +36,12 @@
     </div>
 
     <script>
+        
         var navBtn = document.getElementsByClassName('nav');
         var page = document.getElementsByClassName('page');
-        var pageIdx = 1;
-        document.getElementById("p1").style.display = 'flex';
+        var pageIdx = 0;
+
+        page[0].style.display = 'flex';
 
         for(var i = 0; i < navBtn.length; i++){
             navBtn[i].addEventListener('click', menuClcik);
@@ -52,8 +54,9 @@
             }
             this.classList.add('active');
             pageIdx = Number(this.id.substr(1));
-            document.getElementById("p"+pageIdx).style.display = 'flex';
+            page[pageIdx-1].style.display = 'flex';
         }
+        
         
     </script>
 </body>
