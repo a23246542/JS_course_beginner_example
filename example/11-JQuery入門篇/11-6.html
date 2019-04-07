@@ -71,6 +71,7 @@
             $(".page1").show();
             $(".menu").on('click', function(){
                 var id = $(this)[0].id.substr(1);
+                
                 $("#page > div").hide();
                 $(".page"+id).show();
             })

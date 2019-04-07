@@ -16,19 +16,18 @@
         </div>
         <div class="menu">
             <nav id="nav">
-                <a data-id="1"><img src="../images/05/small/a1.jpg" alt=""></a>
-                <a data-id="2"><img src="../images/05/small/a2.jpg" alt=""></a>
-                <a data-id="3"><img src="../images/05/small/a3.jpg" alt=""></a>
-                <a data-id="4"><img src="../images/05/small/a4.jpg" alt=""></a>
-                <a data-id="5"><img src="../images/05/small/a5.jpg" alt=""></a>
+                <a data-id="a1"><img src="../images/05/small/a1.jpg" alt=""></a>
+                <a data-id="a2"><img src="../images/05/small/a2.jpg" alt=""></a>
+                <a data-id="a3"><img src="../images/05/small/a3.jpg" alt=""></a>
+                <a data-id="a4"><img src="../images/05/small/a4.jpg" alt=""></a>
+                <a data-id="a5"><img src="../images/05/small/a5.jpg" alt=""></a>
             </nav>
         </div>
     </div>
     <script>
         $(function(){
             $("#nav > a").on('click', function(){
-                var num = $(this).data('id');
-                $(".photo").attr('src', '../images/05/big/a'+num+'.jpg')
+                $(".photo").attr('src', '../images/05/big/'+$(this).data('id')+'.jpg')
             });
         });
     </script>

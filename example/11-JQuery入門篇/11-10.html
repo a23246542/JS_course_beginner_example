@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> addClass、removeClass、hasClass </title>
+    <title> addClass、removeClass、hasClass、toggleClass</title>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/11-10.css">
@@ -36,13 +36,18 @@
             var Menu = $("#Menu");
             var navBox = $(".navBox");
             Menu.on("click", function(){
-                if( $(this).hasClass("open")){
-                    $(this).removeClass('open');
-                    navBox.removeClass('open');
-                }else{
-                    $(this).addClass('open');
-                    navBox.addClass('open');
-                }
+                //寫法一
+                // if( $(this).hasClass("open")){
+                //     $(this).removeClass('open');
+                //     navBox.removeClass('open');
+                // }else{
+                //     $(this).addClass('open');
+                //     navBox.addClass('open');
+                // }
+
+                //寫法二
+                $(this).toggleClass('open');
+                navBox.toggleClass('open');
             });
         });
     </script>

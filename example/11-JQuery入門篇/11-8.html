@@ -27,8 +27,7 @@
     <script>
         $(function(){
             $("#nav > a").on('click', function(){
-                var num = $(this).attr("id").substr(1);
-                $(".photo").attr('src', '../images/05/big/a'+num+'.jpg')
+                $(".photo").attr('src', '../images/05/big/'+ $(this).attr("id") +'.jpg')
             });
         });
     </script>
