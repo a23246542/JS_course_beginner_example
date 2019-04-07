@@ -40,12 +40,12 @@
             ]
 
             scrollTopBtn.on("click", function(){
-                $('html, body').animate({scrollTop: 0}, 500); 
+                $('html, body').stop().animate({scrollTop: 0}, 500); 
             });
 
             MenuBtn.on("click", function(){
                 var id = $(this).data("id");
-                $('html, body').animate({scrollTop: pos[id]}, 500); 
+                $('html, body').stop().animate({scrollTop: pos[id]}, 500); 
             });
 
         })      

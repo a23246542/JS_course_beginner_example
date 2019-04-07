@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>獲取物件的座標</title>
+    <title>animate & stop</title>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/11-12.css">
@@ -32,25 +32,25 @@
         $(function(){
             var scrollTopBtn = $("#scrollTop");
             scrollTopBtn.on("click", function(){
-                $('html, body').animate({scrollTop: 0}, 500); 
+                $('html, body').stop().animate({scrollTop: 0}, 500); 
             })
             $(".p1").on("click", function(){
                 var offsetTop = $('.page1').offset().top;
-                $('html, body').animate({scrollTop: offsetTop}, 500); 
+                $('html, body').stop().animate({scrollTop: offsetTop}, 500); 
             })
             $(".p2").on("click", function(){
                 var offsetTop = $('.page2').offset().top;
-                $('html, body').animate({scrollTop: offsetTop}, 500); 
+                $('html, body').stop().animate({scrollTop: offsetTop}, 500); 
             })
             $(".p3").on("click", function(){
                 var offsetTop = $('.page3').offset().top;
-                $('html, body').animate({scrollTop: offsetTop}, 500); 
+                $('html, body').stop().animate({scrollTop: offsetTop}, 500); 
             })
             $(".p4").on("click", function(){
                 var offsetTop = $('.page4').offset().top;
-                $('html, body').animate({scrollTop: offsetTop}, 500); 
+                $('html, body').stop().animate({scrollTop: offsetTop}, 500); 
             })
-        })      
+        })
     </script>
 </body>
 </html>
