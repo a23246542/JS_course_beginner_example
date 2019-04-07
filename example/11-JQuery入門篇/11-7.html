@@ -70,7 +70,7 @@
             $("#page > div").hide();
             $(".page1").show();
             $(".menu").on('click', function(){
-                var id = $(this).attr("id").substr(1);
+                var id = $(this)[0].id.substr(1);
                 $("#page > div").fadeOut(300);
                 $(".page"+id).delay(300).fadeIn();
             })
